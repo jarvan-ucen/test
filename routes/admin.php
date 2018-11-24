@@ -14,6 +14,8 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
-Route::get('/','DemoController@index');
-//Route::get('/demo','DemoController@demo');
-Route::get('/demo','DemoController@demo')->name('demo.demo');
+//Route::get('/admin','AdminController@index');
+//Route::get('/admin', function () {
+//    return 'admin';
+//});
+Route::resource('admin','AdminController');
